@@ -27,48 +27,46 @@ html, body {
   width: 100%;
   /*height: 100%;*/
 }
+.home-page>nav{
+  position: relative;
+}
 #home-1{
   background: url('assets/img/background_inicial.png')no-repeat;
   background-size: 120%;
   height: 100%;
+  min-height: 800px;
 }
 #home-2{
   background: url('assets/img/background_home_1.png')no-repeat center center fixed;
-  -webkit-background-size: 120%;
-  -moz-background-size: 120%;
-  -o-background-size:120%;
   background-size: 120%;
-  min-height: 100%;
-  height: 100%;
-  max-height: 93.7%;
+  min-height: 800px;
+
 }
 #home-3{
   background: url('assets/img/background_fiestas_eventos.png')no-repeat center center fixed;
-  -webkit-background-size: 120%;
-  -moz-background-size: 120%;
-  -o-background-size:120%;
   background-size: 120%;
-  /*height: 100%;*/
+  min-height: 800px;
 }
 #home-4{
   background: url('assets/img/background_unete.png')no-repeat center center fixed;
-  -webkit-background-size: 120%;
-  -moz-background-size: 120%;
-  -o-background-size:120%;
   background-size: 120%;
+  min-height: 800px;
 }
 #home-5{
   background: #000;
+  background-size: 120%;
+  min-height: 800px;
 }
 #home-6{
   background: url('assets/img/background_cotactanos.png')no-repeat center center fixed;
-  -webkit-background-size: 120%;
-  -moz-background-size: 120%;
-  -o-background-size:120%;
   background-size: 120%;
+  min-height: 800px;
 }
-#container-2,#container-3{
+#container-2{
   height: 100%;
+}
+#container-3,#container-4,#container-5,#container-6,#container-7{
+  height: 1290px;
 }
 #container-3{
   margin-top: -22px;
@@ -131,6 +129,7 @@ html, body {
 }
 #barra-nav-custom-fixed-top{
   display: none;
+  position: fixed;
   z-index: 300 !important;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -149,6 +148,7 @@ html, body {
 #barra-nav-custom-ancla-eventos{
   background: #000;
   height: 100px;
+  margin-bottom: 0px;
 }
 #barra-nav-custom>.container>.col-md-10>ul ,#barra-nav-custom-fixed-top>.container>.col-md-10>ul{
   padding: 0px 60px 0px 145px;
