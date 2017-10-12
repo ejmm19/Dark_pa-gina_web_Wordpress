@@ -1,0 +1,269 @@
+/*
+Theme Name: BlankSlate
+Theme URI: https://github.com/tidythemes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of BlankSlate (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving BlankSlate, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0) just how much we've revamped things. Last, but not least, BlankSlate has now been <a href="https://github.com/tidythemes/blankslate">opened up on GitHub</a> (github.com/tidythemes/blankslate) if anyone would like to make suggested code additions/improvements. Thank you for using BlankSlate.
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2017 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+
+@import "https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i";
+@import "https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700";
+
+html, body {
+  height: 100%;
+}
+
+
+.home-page{
+  width: 100%;
+  /*height: 100%;*/
+}
+#home-1{
+  background: url('assets/img/background_inicial.png')no-repeat;
+  background-size: 120%;
+  height: 100%;
+}
+#home-2{
+  background: url('assets/img/background_home_1.png')no-repeat center center fixed;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  -o-background-size:120%;
+  background-size: 120%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 93.7%;
+}
+#home-3{
+  background: url('assets/img/background_fiestas_eventos.png')no-repeat center center fixed;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  -o-background-size:120%;
+  background-size: 120%;
+  /*height: 100%;*/
+}
+#home-4{
+  background: url('assets/img/background_unete.png')no-repeat center center fixed;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  -o-background-size:120%;
+  background-size: 120%;
+}
+#home-5{
+  background: #000;
+}
+#home-6{
+  background: url('assets/img/background_cotactanos.png')no-repeat center center fixed;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  -o-background-size:120%;
+  background-size: 120%;
+}
+#container-2,#container-3{
+  height: 100%;
+}
+#container-3{
+  margin-top: -22px;
+}
+.row-2{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+#row-home-1,#row-home-2,#row-home-3{
+  background: rgba(0, 0, 0, 0.56);
+  height: 100%;
+  /*-webkit-box-shadow: 0px 1px 32px 10px rgba(255,0,21,1);
+  -moz-box-shadow: 0px 1px 32px 10px rgba(255,0,21,1);
+  box-shadow: 0px 1px 32px 10px rgba(255,0,21,1);*/
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  animation-name: example;
+  animation-duration: 5s;
+}
+
+.iconos-socials-ini{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#terminos-cond{
+  color:#fff;
+}
+.iconos-socials-ini img{
+  padding: 10px;
+}
+.bnt-entrar{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.bnt-entrar:hover{
+  background: #000;
+}
+#entrar{
+  border-radius: 9px;
+}
+#row-home-1>center>img{
+  width: 500px;
+  margin-top: 60px;
+}
+
+#row-home-1>center>p{
+  color: #fff;
+  padding: 80px 313px 0px 313px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+}
+#barra-nav-custom-fixed-top{
+  display: none;
+  z-index: 300 !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}#barra-nav-custom-fixed-top{
+  background-color: #a90800;
+  border-color: #a90800;
+  z-index: 99;
+}
+#barra-nav-custom{
+  background-color: #a90800;
+  border-color: #a90800;
+  z-index: 1000;
+}
+#barra-nav-custom-ancla-eventos{
+  background: #000;
+  height: 100px;
+}
+#barra-nav-custom>.container>.col-md-10>ul ,#barra-nav-custom-fixed-top>.container>.col-md-10>ul{
+  padding: 0px 60px 0px 145px;
+}
+#barra-nav-custom ul li a,#barra-nav-custom-fixed-top ul li a{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  padding: 30px 30px 30px 30px;
+  font-size: 1.2em;
+  color: #fff;
+}
+.navbar-default{
+  z-index: 100;
+}
+.dropdown-menu{
+  background: rgba(0, 0, 0, 0.53) !important;
+  padding: 0px !important;
+}
+.dropdown-menu li{
+  border-top: 1px solid #cecece;
+}
+.dropdown-menu li a{
+  padding: 5px 30px 5px 30px !important;
+  color: #fff;
+  font-weight: 400 !important;
+}
+.itm-menu{
+  text-align: center;
+}
+.itm-menu h3{
+  font-size: 3em;
+  color: #fff;
+  font-weight: 500;
+}
+.contenido-page h2{
+  color: #fff;
+  padding: 80px 0px 80px 0px;
+  font-size: 3em;
+  font-weight: 500;
+}
+.contenido-page-parrafos{
+  padding: 100px;
+}
+.contenido-page-parrafos-2{
+    padding: 30px;
+}
+.contenido-page-parrafos p,.contenido-page-parrafos-2 p{
+  color: #fff;
+  text-align: justify;
+  font-size: 1.2em;
+}
+#list-fiestas-eventos{
+
+}
+#list-fiestas-eventos li{
+  width: 47%;
+  float: left;
+  padding: 30px;
+}
+#list-fiestas-eventos li img{
+  width: 100%;
+}
+#list-fiestas-eventos li p{
+  font-size: 1em;
+}
+.info-fiesta-evento{
+  font-size: 1.2em;
+}
+.span-fhcover{
+  font-weight: 600;
+}
+#list-fiestas-eventos h3 a{
+  color: #fff;
+  font-weight: 600;
+}
+#copyright{
+  text-align: center;
+  height: 60px;
+  background: #a90200;
+  color: #fff;
+  font-size: 1.4em;
+  padding-top: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+#name-foot{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/*.dropdown-menu li a:hover{
+
+}*/
+@-webkit-keyframes example {
+    0%   {
+      -webkit-box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+      -moz-box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+      box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+    }
+    30%   {
+      -webkit-box-shadow: 0px 1px 32px 10px rgba(255, 0, 21, 0.23);
+      -moz-box-shadow: 0px 1px 32px 10px rgba(255, 0, 21, 0.23);
+      box-shadow: 0px 1px 32px 10px rgba(255, 0, 21, 0.23);
+    }
+    50% {
+      -webkit-box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+      -moz-box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+      box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+    }
+    80%   {
+      -webkit-box-shadow: 0px 1px 32px 10px rgba(255, 0, 21, 0.23);
+      -moz-box-shadow: 0px 1px 32px 10px rgba(255, 0, 21, 0.23);
+      box-shadow: 0px 1px 32px 10px rgba(255, 0, 21, 0.23);
+    }
+    100%   {
+      -webkit-box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+      -moz-box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+      box-shadow: 0px 1px 32px 10px rgba(255,0,21,0.5);
+    }
+}
