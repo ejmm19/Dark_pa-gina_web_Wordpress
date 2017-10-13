@@ -248,14 +248,17 @@
     <div class="col-md-1" id="rw-izq-2">
     </div>
     <div class="col-md-10" id="row-home-3">
+    <div class="contenido-page">
       <div class="contenido-page-parrafos">
         <?php
-        $post   = get_post(14);
-        $titulo = $post->post_title;
-        $output =  apply_filters( 'the_content', $post->post_content );
+        $page_contacto   = get_post(8);
+        $titulo = $page_contacto->post_title;
+        $output =  apply_filters( 'the_content', $page_contacto->post_content );
         echo $output;
+        // echo do_shortcode( '[contact-form-7 id="49" title="Contact form 1"]' );
         ?>
       </div>
+    </div>
     </div>
     <div class="col-md-1" id="rw-der-2">
     </div>
