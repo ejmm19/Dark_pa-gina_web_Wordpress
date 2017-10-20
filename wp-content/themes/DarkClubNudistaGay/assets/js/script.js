@@ -77,19 +77,59 @@ var obj_top = obj.scrollTop()   //scroll vertical inicial del objeto
 obj.scroll(function(){
     var obj_act_top = jQuery(this).scrollTop();  //obtener scroll top instantaneo
     if(obj_act_top > obj_top){
-      jQuery("#barra-nav-custom-fixed-top").css('margin-top', '-82px');
+      jQuery("#barra-nav-custom-fixed-top").css('margin-top', '-120px');
     }else{
       jQuery("#barra-nav-custom-fixed-top").css('margin-top', '0');
     }
     obj_top = obj_act_top;                  //almacenar scroll top anterior
 });
 function verificar(){
-  jQuery("#barra-nav-custom-fixed-top").css('margin-top', '-82px');
+  jQuery("#barra-nav-custom-fixed-top").css('margin-top', '-120px');
 }
 setInterval(function(){
   verificar();
 },3000);
 
   // disableScroll();
+
+//eventos wordpress
+var cont = 0;
+jQuery("#theme-my-login-2>h3").click(function(event) {
+  if (cont === 0) {
+    jQuery("#theme-my-login1").css('display', 'block');
+    cont = 1;
+  }else if (cont === 1){
+    jQuery("#theme-my-login1").css('display', 'none');
+    cont = 0;
+  }
+});
+// jQuery("#theme-my-login-2>h3").hover(function() {
+//   jQuery("#theme-my-login1").css('display', 'block');
+// }, function() {
+//   jQuery("#theme-my-login1").css('display', 'none');
+// });
+//   var cnt = 0;
+// jQuery("#events").click(function(event) {
+//   if (cnt==0) {
+//       jQuery("#sub-menu-events").css('display', 'block');
+//       cnt=1;
+//   }else {
+//     jQuery("#sub-menu-events").css('display', 'none');
+//     cnt=0;
+//   }
+  jQuery("#events").hover(function() {
+    jQuery("#sub-menu-events").css('display', 'block');
+  }, function() {
+    jQuery("#sub-menu-events").css('display', 'none');
+  });
+
+  jQuery("#events-fixed").hover(function() {
+    jQuery("#sub-menu-events-fixed").css('display', 'block');
+  }, function() {
+    jQuery("#sub-menu-events-fixed").css('display', 'none');
+  });
+
+
+
 
 });
